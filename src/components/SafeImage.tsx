@@ -1,0 +1,2 @@
+'use client';
+import Image from 'next/image';import {useState} from 'react';export default function SafeImage({src,alt}:{src:string;alt:string}){const[failed,setFailed]=useState(false);return failed?<div className="image-fallback" aria-label={alt}><span>TAIWAN · FORMOSA</span></div>:<Image src={src} alt={alt} fill sizes="(max-width:768px) 100vw, 33vw" className="object-cover" onError={()=>setFailed(true)}/>}
