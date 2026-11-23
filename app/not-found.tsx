@@ -1,0 +1,1 @@
+import Link from 'next/link';export default function NotFound(){return <section className="not-found"><span className="eyebrow">A LITTLE OFF THE MAP</span><h1>這段風景，<br/><em>還沒被找到。</em></h1><p>換個方向探索，也許下一站更合心意。</p><Link href="/destinations" className="button button-primary">回到景點探索</Link></section>}
